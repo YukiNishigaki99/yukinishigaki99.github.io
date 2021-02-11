@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<title>Week6 Simple Calculator</title>
+<link href="css/calculator.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>Checking the Calculation</h1>
+        <h2>Yuki Nishigaki</h2>
+    </header>
+    <main>
+        <h3>Enter two numbers and <br>an arithmetic operator (+, -, *, or /) <br>and answer the problem.</h3>
+        <label><input type="text" id="number1"></label>
+        <label><input type="text" id="operator"></label>
+        <label><input type="text" id="number2"></label>
+        <label>=</label>
+        <label><input type="text" id="answer"></label>
+        
+        <label><button onclick="calculator()">Check</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Yuki Nishigaki &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script src="js/calculator.js"></script>
+</body>
+
+</html>

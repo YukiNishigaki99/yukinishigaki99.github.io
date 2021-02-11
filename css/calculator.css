@@ -1,0 +1,53 @@
+body {
+	text-align: center;
+}
+header,
+footer {
+	background-color: #D9E5FF;
+	color: #808080;
+	padding: 10px;
+}
+
+footer {
+	font-size: 13px;
+	letter-spacing: 1.5pt;
+}
+
+h1,
+h2 {
+	margin: 0;
+}
+
+h2, #currentdate {
+	color: #c0c0c0;
+}
+
+main {
+	margin: 10px auto;
+	border: 1px solid #BAD3FF;
+	padding: 10px;
+    background-color: #BAD3FF;
+    color: #fff;
+    box-shadow: 0 0 30px;
+}
+
+h3 {
+	font-size: 24px;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid #808080;
+	padding: 0;
+}
+
+input{
+	width: 40px;
+	height: 20px;
+}
+
+button{
+    width: 50px;
+    height: 30px;
+}
+
+label {
+    margin: 5px;
+}
