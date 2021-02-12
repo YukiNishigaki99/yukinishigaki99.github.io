@@ -19,28 +19,30 @@ h2 {
 }
 
 h2, #currentdate {
-	color: #c0c0c0;
+	color: yellow;
 }
 
+main {
+	margin: 10px auto;
+	border: 1px solid #999;
+	padding: 10px;
+	max-width: 600px;
+	background-color: #abe;
+	box-shadow: 0 0 30px;
+}
 
 h3 {
-    font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
+	font-size: 24px;
 	margin: 0 0 15px 0;
-	border-bottom: 1px solid #808080;
-	padding: 0;
+	border-bottom: 1px solid #333;
+    padding: 0;
 }
 
 input{
-	width: 40px;
-	height: 20px;
-}
-
-button{
-    width: 50px;
-    height: 30px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 label {
-    margin: 5px;
+	margin: 5px;
 }

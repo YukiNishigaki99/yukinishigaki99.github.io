@@ -25,9 +25,6 @@ function calculator() {
         case '/':
             correctAnswer = number1 / number2;
             break;
-        default:
-            statements; 
-            break;
     }
 
     //Check the user's calculation

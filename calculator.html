@@ -3,24 +3,29 @@
 
 <head>
 <meta charset="utf-8" />
-<title>Week6 Simple Calculator</title>
+<title>Week6 Assignment: Simple Calc</title>
 <link href="css/calculator.css" rel="stylesheet" />
 </head>
 
 <body>
     <header>
-        <h1>Checking the Calculation</h1>
+        <h1>Check the Calculation</h1>
         <h2>Yuki Nishigaki</h2>
     </header>
     <main>
-        <h3>Enter two numbers and an arithmetic operator (+, -, *, or /) and answer the problem.</h3>
-        <label><input type="text" id="number1"></label>
-        <label><input type="text" id="operator"></label>
-        <label><input type="text" id="number2"></label>
+        <h3>Test Your Math Skills!</h3>
+        <label><input type="text" id="number1" placeholder="Type a first number"></label>
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">*</option>
+            <option value="-">/</option>
+        </select>
+        <label><input type="text" id="number2" placeholder="Type a second number"></label>
         <label>=</label>
-        <label><input type="text" id="answer"></label>
-        
-        <label><button onclick="calculator()">Check</button></label>
+        <label><input type="text" id="answer" placeholder="Type your answer"></label>
+        <br>
+        <label><button onclick="calculator()">Check your answer</button></label>
         <hr>
         <p><span id="output"></span></p>
     </main>
