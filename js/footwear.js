@@ -4,25 +4,22 @@ function footwear() {
      * Output: Display appropriate shoes for weather to the user
      */
 
-     //Input: get user inputs and assign them to the variables
-    let hot = document.getElementById('hot').value;
-    let rain = document.getElementById('rain').value;
-    let snow = document.getElementById('snow').value;
-    let unknown = document.getElementById('unknown').value;
+     //Input: get user input and assign them to the variable
+    let weather = document.getElementById('weather').value;
 
     //Processing: compare the value of the variable by using switch statesment
     let shoes;
     switch (weather) {
-        case hot:
+        case 'hot':
             shoes = 'sandals';
             break; 
-        case rain:
+        case 'rain':
             shoes = 'galoshes';
             break;
-        case snow:
+        case 'snow':
             shoes = 'boots';
             break;
-        case unknown:
+        case 'unknown':
             shoes = 'shoes';
             break;
     }
