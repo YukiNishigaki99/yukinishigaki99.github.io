@@ -20,7 +20,7 @@ function footwear() {
             shoes = 'galoshes';
             break;
         case snow:
-            shoes = 'boots'
+            shoes = 'boots';
             break;
         case unknown:
             shoes = 'shoes';
@@ -28,5 +28,5 @@ function footwear() {
     }
     
     //Output: Display the message to the user
-    document.getElementById('output'). innerHTML = 'You should wear ' + shoes + '.'
+    document.getElementById('output').innerHTML = 'Adequate footwewar type is ' + shoes + '.';
 }
