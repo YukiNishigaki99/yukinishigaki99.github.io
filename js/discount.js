@@ -19,10 +19,3 @@ function discount() {
     totalAfterTax = total * 1.06
     document.getElementById('output').innerHTML = '$' + totalAfterTax.toFixed(2)
 }
-
-
-
-//Monday (1)	25.95	27.51
-//Tuesday (2)	37.00	39.22
-//Wednesday (3)	53.25	50.80
-//Thursday (4)	72.81	77.18
