@@ -17,7 +17,7 @@ function discount() {
 
     //output: the total amount after discount and adding tax
     totalAfterTax = total * 1.06
-    document.getElementById('output').innerHTML = '$' + totalAfterTax
+    document.getElementById('output').innerHTML = '$' + totalAfterTax.toFixed(2)
 }
 
 
