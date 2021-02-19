@@ -1,4 +1,4 @@
-document.getElementById('date').innerHTML = new Date();
+document.getElementById('date').innerHTML = new Date()
 
 function alarm() {
 //input: date, get from computer's clock
