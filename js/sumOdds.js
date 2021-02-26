@@ -12,5 +12,5 @@ function sumOdds() {
 
     // Display the result for the user to see.
     document.getElementById('output').innerHTML = 
-    `the sum of all the odd integers between 1 and the integer you provided is ${sumOdds}.`;
+    `The sum of all the odd integers between 1 and the integer you provided is ${sumOdds}.`;
 }
