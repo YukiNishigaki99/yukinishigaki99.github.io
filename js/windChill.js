@@ -1,9 +1,8 @@
-function doInputOutput() {
 /* Input: temperature and wind speed
  * Processing: calculate the wind chill factor if both inputs meets the specifications
  * Output: the wind chill factorin Fahrenheit
  */
-
+function doInputOutput() {
     let temperature = parseFloat(document.getElementById('temperature').value);
     let windspeed = parseFloat(document.getElementById('windspeed').value);
     if (temperature < 50 && windspeed < 3) {
