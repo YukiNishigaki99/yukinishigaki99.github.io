@@ -47,9 +47,11 @@ input{
     text-align: center;
 }
 
-input,
-button {
+input {
 	width: 70px;
 	height: 25px;
+}
+button {
+	height: 30px;
 }
 
