@@ -5,13 +5,12 @@
 function doInputOutput() {
     let temperature = parseFloat(document.getElementById('temperature').value);
     let windspeed = parseFloat(document.getElementById('windspeed').value);
-    if (temperature < 50 && windspeed < 3) {
+    if (temperature < 50 && windspeed >= 3) {
         let windchill = windChill(temperature, windspeed);
         document.getElementById('output').innerHTML = windchill;
     }
 }
 
 function windChill(tempF, speed) {
-    let f = 35.74 + 0.6215 * tempF - 35.75 * Math.power(speed, 0.16) + 0.4275 * tempF * Math.power(speed, 0.16);
-    return f;
+    return 35.74 + 0.6215 * tempF - 35.75 * Math.power(speed, 0.16) + 0.4275 * tempF * Math.power(speed, 0.16);
 }
