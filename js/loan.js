@@ -30,7 +30,7 @@ function doBalance() {
 function computePayment(principal, annualRate, years, periodsPerYear) {
     let r = annualRate / periodsPerYear;
     let n = years * periodsPerYear;
-    let payment = principal * r / 1 - Math.pow((1 + r, 1 / n));
+    let payment = principal * r / 1 - (1 + r) ** -n;
     return payment;
 }
 
