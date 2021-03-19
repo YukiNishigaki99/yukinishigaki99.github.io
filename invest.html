@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<title>Week11 Assignment - invest</title>
+<link href="css/style2.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>Week11</h1>
+        <h2>Yuki Nishigaki</h2>
+    </header>
+    <main>
+        <h3>Investment Calculator</h3>
+        <label>Amount Invested (principal) <input type="text" id="principal"></label>
+        <label>Annual Rate (example: .08) <input type="text" id="annualRate"></label>
+        <label>Number of Years <input type="text" id="numberOfYears"></label>
+        <label>Periods per Year <input type="text" id="periodsPerYear"></label>
+        <label><button onclick="doFV()">Compute Future Value</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2021 &bull; Yuki Nishigaki &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script src='js/invest.js'></script>
+</body>
+
+</html>
