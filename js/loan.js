@@ -28,13 +28,15 @@ function doBalance ( ) {
 }
 
 function computePayment (principal, annualRate, years, periodsPerYear) {
-    let payment = principal * (annualRate / periodsPerYear) / 1 - Math.pow((1 + (annualRate / periodsPerYear)), -(years * periodsPerYear));
-    return payment;
+    let r = annualRate / periodsPerYear;
+    let n = years * periodsPerYear;
+    let p = principal * r / 1 - Math.pow((1 + r, -n));
+    return p;
 }
 
 function computeBalance (principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate) {
     let p = computePayment(principal, annualRate, years, periodsPerYear);
     let r = annualRate / periodsPerYear;
-    let balance = principal * Math.pow((1 + r), numberOfPaymentPaidToDate) - p * (Math.pow((1 + r), numberOfPaymentPaidToDate) - 1) / r;
+    let balance = principal * Math.pow((1 + r), numberOfPaymentPaidToDate) - (p * (Math.pow((1 + r), numberOfPaymentPaidToDate) - 1) / r);
     return balance;
 }
