@@ -3,57 +3,50 @@
   <head>
 
   <style> /* #0 */
-	   body { font-size:36px; }
-	</style>
-  <style> /* #1 */
-	   body { font-size:16px; }
-	</style>
-  <style> /* #2 */
-	    body { 
-        text-align: center;
-        font-size:25px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;  
-      }
-      div#title {
-        background-color: rgb(153, 12, 153);
-        color: white;
-        padding: 50px;
-      }
-      div#text {
-        background-color: violet;
-        color: white;
-        padding: 50px;
-      }
-      div.content {
-        color: gray;
-        font-weight: bold;
-      }
-      ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-around;
-      }
-      li {
-        background-color: rgb(153, 12, 153);
-        padding: 20px;
-        border-radius: 20px;
-        color: white;
-      }
-      a {
-        color: rgb(153, 12, 153);
-        text-decoration: none;
-      }
-      div#bottom {
-        padding: 50px;
-      }
-      div#sidebar {
-        position: sticky;
-        margin-bottom: 0;
-        top: 10px;
-        z-index: 1;
-      }
-	</style>
-  <style> /* #3 */
+  body { 
+    text-align: center;
+    font-size:25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+  }
+  div#title {
+    background-color: rgb(153, 12, 153);
+    color: white;
+    padding: 50px;
+  }
+  div#text {
+    background-color: violet;
+    color: white;
+    padding: 50px;
+  }
+  div.content {
+    color: gray;
+    font-weight: bold;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  li {
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(153, 12, 153);
+  }
+  a {
+    color: rgb(153, 12, 153);
+    text-decoration: none;
+  }
+  div#bottom {
+    padding: 50px;
+  }
+  div#sidebar {
+    position: sticky;
+    margin-bottom: 0;
+    top: 10px;
+    z-index: 1;
+  }
+</style>
+<style> /* #1 */
     body { 
       text-align: center;
       font-size:15px;
@@ -78,10 +71,71 @@
     div#bottom {
       font-family: Arial, Helvetica, sans-serif;
     }
-
- 
-
-	</style>
+</style>
+<style> /* #2 */
+    @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Libre+Baskerville:wght@400&display=swap');
+    div#title {
+      background-color: green;
+      color: white;
+      padding: 20px 100px;
+    }
+    h1 {
+      font-family: 'Julius Sans One', sans-serif;
+    }
+	  body {
+      font-size:20px; font-family: 'Libre Baskerville', serif;
+    }
+    div {
+      padding: 20px 100px;
+      margin: 0;
+    }
+    div#text {
+      background-color: greenyellow;
+    }
+    div#menuBar, div#sidebar {
+      background-color: rgb(173, 233, 173);
+    }
+    ul {
+      list-style-type: none;
+    }
+</style>
+<style> /* #3 */
+    @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap');
+    body {
+      font-size: 30px;
+      font-family: 'Averia Serif Libre', cursive;
+      background-image: url("JapaneseBackground.jpg");
+      background-position: top;
+      background-attachment: fixed;
+      padding: 0 100px;
+    }
+    #title {
+      color: white;
+      padding: 20px 100px;
+    }
+    h1, h3 {
+      color: white;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      }
+    li {
+      background-color: rgb(26, 184, 176, 0.5);
+      padding: 20px;
+      border-radius: 20px;
+      color: white;
+    }
+    #bottom {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+    #text, #sidebar {
+      color: gray;
+    }
+</style>
+    
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Week 03 : CSS</title>
