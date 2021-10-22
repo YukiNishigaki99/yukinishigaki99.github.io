@@ -26,6 +26,17 @@ button {
   width: 100%;
 }
 
+#hair, #cookie {
+  display: flex;
+  flex-direction: column;
+}
+
+li.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+
 /* Section3 grid_first */
 #grid_first {
   display: grid;
@@ -62,7 +73,6 @@ button {
   min-height: 100px;
 }
 
-
 .box9 {
   display: flex;
 }
@@ -87,7 +97,7 @@ button {
   .box1 {
     grid-column: span 2;
     grid-row: span 2;
-  }
+}
 
   .box8 {
     height: auto;
@@ -106,9 +116,9 @@ button {
   }
 
   .box1 {
-    grid-template-columns: span 3;
-    grid-template-rows: span 2;
-  }
+    grid-column: span 3;
+    grid-row-end: span 3;
+}
 
   .box9 {
     flex-wrap: nowrap;
