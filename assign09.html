@@ -50,27 +50,34 @@
             You must display all of the information in the JSON file 
             for each student (first name, last name, address, gpa, and major).
             */
+            /*
+            You must display all of the information in the JSON file 
+            for each student (first name, last name, address, gpa, and major).
+            */
             let button = document.getElementById("button");
             button.addEventListener("click", function() {
                 let fileName = document.getElementById("filename");
-                let xhttp = new XMLHttpRequest();
+                let req = new XMLHttpRequest();
                 let output;
-                xhttp.open("GET", fileName, true);
-                xhttp.send();
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                        const obj = JSON.parse(xhttp.responseText);
-
-                        for (let item of obj) {
-                            const student = JSON.parse(obj);
-                            const address = JSON.parse(student.address);
-                            output += `${student.first} ${student.last}\n${student.address}\n${student.major} ${student.gpa}\n\n`;
+                req.open("GET", fileName);
+                req.onload = function() {
+                    req.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            const obj = JSON.parse(req.responseText);
+                            const student = JSON.parse(obj[0]);
+                            for (let item of student) {
+                                const address = JSON.parse(student.address);
+                                output += `Name: ${student.first} ${student.last}\nAddress: ${student.address}\nMajor: ${student.major} GPA: ${student.gpa}\n\n`;
+                            }
+                        } else if (this.status == 404) {
+                            output = "The file does not exist."
                         }
-                    } else if (this.status == 404) {
-                        output = "The file does not exist."
-                    }
-                        document.getElementById("output2").innerHTML = output;
-                };
+                            document.getElementById("output2").innerHTML = output;
+                    };
+
+                }
+                req.send();
+            }, false);
 
                 /*if (xhhtp.status == "404") {
                     result = "The file does not exist."
@@ -87,7 +94,6 @@
                     }
                 
                 document.getElementById("output2").innerHTML = result;*/
-            }, false);
 
             /*
             button.addEventListener("click", function() {
@@ -116,4 +122,4 @@
 
 
 
-<!--
+<!---->
