@@ -1,0 +1,38 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #352A33;
+}
+
+header {
+    padding: 10px;
+    border-bottom: 1px solid #352A33;
+}
+
+section {
+    padding: 30px 10px;
+}
+
+@media only screen and (min-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+h3 {
+    color: #A06267;
+}
+
+select, input, button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+select, input {
+    width: 200px;
+}
+
+footer {
+    color: gray;
+    font-size: small;
+    border-top: 1px solid gray;
+}
