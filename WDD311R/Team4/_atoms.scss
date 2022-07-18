@@ -1,0 +1,73 @@
+@use 'variables' as *;
+
+@mixin style($b: $background-color, $t: $text-light) {
+    background-color: $b;
+    color: $t;
+}
+@mixin imageback($image: "images/lotus.jpg") {
+    background-image: url($image);
+    background-size: cover;
+}
+@mixin nomargins($p: 0, $m: 0) {
+    padding: $p;
+    margin: $m;    
+}
+@mixin gradient() {
+    background: rgb(211,211,211);
+    background: linear-gradient(90deg, rgba(211,211,211,1) 0%, rgba(128,128,128,1) 100%);
+}
+@mixin link($value: none, $t: $link, $w: bold) {
+    text-decoration: $value;
+    color: $t;
+    font-weight: $w;
+}
+@mixin list() {
+    height: 2em;
+    padding: 10px 0 10px 30px;
+    overflow: visible;
+}
+body {
+    @include nomargins();
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $fonts-headline;
+}
+p {
+    font-family: $fonts-body;
+}
+h1 {
+    font-size: 3em;
+    @include imageback();
+    overflow: hidden;
+    padding: 50px;
+    margin: 0;
+}
+.intro h2, .intro h3 {
+    padding: 0 50px;
+}
+.intro p {
+    font-size: small;
+    padding: 0 50px;
+}
+.sidebar {
+    @include imageback();
+}
+.main h3 {
+    @include gradient();
+    color: $text-dark;
+}
+a {
+    @include link();
+    &:visited {
+        @include link(none, gray, bold);
+    }
+}
+footer a {
+    font-family: $fonts-headline;
+    border-radius: 5%;
+    @include nomargins(.5em 1em, .5em);
+    @include style(darkgoldenrod, white);
+    &:visited {
+        @include link(none, white, bold);
+    }
+}

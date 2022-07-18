@@ -1,0 +1,14 @@
+@use 'variables' as *;
+@use 'atoms';
+
+.summary, .preamble {
+    animation: fadein 5s ease 1s 1 normal backwards;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
